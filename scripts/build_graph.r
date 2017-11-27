@@ -1,0 +1,5 @@
+table <- read.table("./merged.file")
+g <- graph.data.frame(table, directed=TRUE)
+vcount(g)
+ecount(g)
+hist(degree(g))
